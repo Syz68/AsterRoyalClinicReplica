@@ -1,0 +1,42 @@
+/* mobiel view form css */
+.add-mobileview-formcontainer {
+    width: 100%;
+    height: 100%;
+}
+
+/* Hide form by default */
+.add-mobileview-only {
+    display: none;
+}
+
+/* Show form only on mobile devices (max width 768px) */
+@media (max-width: 768px) {
+    .add-mobileview-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+
+
+        background-color: white;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        border-radius: 1rem;
+
+        border-bottom: 5px solid #E4AE2B;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        box-shadow: 0 7px 10px -4px rgba(228, 174, 43, 0.6);
+    }
+
+    .add-mobileview-formcontainer iframe {
+        width: 100%;
+        height: 35vh;
+        border: none;
+    }
+}

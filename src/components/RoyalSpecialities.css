@@ -1,0 +1,71 @@
+/* Existing styles */
+.specialities-container {
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.specialities-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #E4AE2B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.specialities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+    gap: 20px 40px; /* Row and column gaps */
+    align-items: center;
+}
+
+.speciality-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.speciality-icon {
+    background-color: transparent;
+    border: 2px solid #E4AE2B;
+    border-radius: 50%;
+    padding: 10px;
+    color: #E4AE2B;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .specialities-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px; /* Adjust spacing for mobile */
+    }
+
+    .specialities-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .specialities-title {
+        font-size: 1.8rem; /* Reduce font size for mobile */
+        margin-bottom: 20px; /* Reduce spacing for mobile */
+    }
+
+    .speciality-item {
+        font-size: 1rem; /* Slightly reduce font size for mobile */
+    }
+
+    .speciality-icon {
+        width: 40px; /* Slightly reduce icon size for mobile */
+        height: 40px;
+        font-size: 1.3rem;
+    }
+}

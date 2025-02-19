@@ -1,0 +1,75 @@
+/* Existing styles */
+.why-choose-container {
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    max-width: 1100px; /* Restrict width for better alignment */
+    margin: 0 auto; /* Center container */
+}
+.why-choose-item {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    justify-content: flex-start; /* Align items to the start for consistency */
+    gap: 15px; /* Space between icon and text */
+    font-size: 1.2rem;
+}
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal width columns */
+    gap: 20px 60px; /* Row and column spacing */
+}
+.why-choose-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Equal icon width */
+    height: 50px; /* Equal icon height */
+    border: 2px solid #E4AE2B;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #E4AE2B;
+}
+.why-choose-title {
+    color: #E4AE2B;
+    font-size: 2.1rem;
+    padding-bottom: 40px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px; /* Adjust spacing for mobile */
+    }
+
+    .why-choose-container {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .why-choose-title {
+        font-size: 1.8rem; /* Reduce font size for mobile */
+        padding-bottom: 20px; /* Reduce padding for mobile */
+    }
+
+    .why-choose-icon {
+        width: 40px; /* Slightly reduce icon size for mobile */
+        height: 40px;
+        font-size: 1.4rem;
+    }
+}
+
+.royal-choose-maindiv {
+    position: relative;
+    }
+    .royal-bg-tl {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 300px;
+    height: 450px;
+    z-index: 1;
+    background-image: url('../assets/top-left-image.png');
+    background-size: cover;
+    background-position: center;
+    }

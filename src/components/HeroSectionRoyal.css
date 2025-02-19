@@ -1,0 +1,94 @@
+.royal-maindiv {
+    background-image: url('https://www.asterclinic.ae/assets/h4-CJOtfYXY.jpg');
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 7px solid #E4AE2B;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 9px 11px -5px rgba(228, 174, 43, 0.6);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .royal-maindiv {
+        display: flex;
+        flex-direction: column; /* Change to column for smaller screens */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center justify items */
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add padding for better spacing */
+        height: 75vh;
+    }
+
+    .royal-bannerformcontainer {
+        display: none !important;
+    }
+
+    .royal-lhs-text h2 {
+        font-size: 1.25rem;
+    }
+
+    .royal-lhs-text h2 span {
+        font-size: 2rem;
+    }
+
+
+}
+
+.royal-logo img {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 6%;
+    left: 6%;
+}
+
+.royal-iframh2 {
+    color: #E4AE2B;
+    font-size: 2rem;
+
+}
+
+.royal-bannerformcontainer {
+
+    /* background-color: rgba(51, 79, 238, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    background-color: white;
+    width: 350px;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 1rem;
+
+    border-bottom: 5px solid #E4AE2B;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    box-shadow: 0 7px 10px -4px rgba(228, 174, 43, 0.6);
+
+    z-index: 2;
+
+}
+
+.royal-iframecontainer {
+    width: 100%;
+    height: 40vh;
+
+}
+
+.royal-lhs-text h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    /* width: 250px; */
+    height: auto;
+    top: 48%;
+    left: 6%;
+}
