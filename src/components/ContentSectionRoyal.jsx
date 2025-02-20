@@ -1,8 +1,6 @@
 import React from 'react'
 import './ContentSectionRoyal.css'
 import { FaMapMarkerAlt, FaUserMd, FaHeartbeat, FaUsers, FaShieldAlt, FaFlask } from "react-icons/fa";
-import topleft from "../assets/top-left-image.png"
-
 
 const features = [
     { icon: <FaMapMarkerAlt />, text: "Prime Location & Easy Access" },

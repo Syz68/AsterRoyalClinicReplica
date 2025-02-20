@@ -1,0 +1,71 @@
+/* RoyalClinicVideo.css */
+
+/* Section Styling */
+.royal-video-section {
+    background-color: #0a4c91; /* Deep blue background */
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .royal-video-heading {
+    font-size: 2rem;
+    color: #E4AE2B; /* Golden-yellow */
+    margin-bottom: 30px;
+  }
+  
+  /* Video Grid Layout */
+  .royal-video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Video Card */
+  .royal-video-card {
+    background-color:  #d29e25;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .royal-video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(228, 174, 43, 0.3);
+  }
+  
+  /* Video Iframe */
+  .royal-video-iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  /* Video Title */
+  .royal-video-title {
+    /* margin-top: 12px; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1669c2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .royal-video-iframe {
+      height: 180px;
+    }
+  
+    .royal-video-title {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .royal-video-iframe {
+      height: 160px;
+    }
+  }
+  

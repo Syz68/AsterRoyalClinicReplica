@@ -1,0 +1,53 @@
+.insurance-maindiv-royal{
+    width: 100%;
+    position: relative;
+    padding-bottom: 220px ;
+}
+
+.contentpart-royal {
+    max-width: 1100px;
+    margin: 0 auto;   
+}
+
+.contentpart-royal h3 {
+    font-size: 1.5rem;
+    color: #E4AE2B;
+}
+
+.contentpart-royal p {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
+    .royal-bg-bl {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 650px;
+    height: 320px;
+    z-index: 1;
+    background-image: url('../assets/last-image.png');
+    background-size: cover;
+    background-position: center;
+    }
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .royal-bg-bl {
+        width: 350px;
+        height: 177px;
+    }
+
+    .contentpart-royal {
+        margin-left: 10px;
+    }
+
+    .insurance-maindiv-royal {
+        padding-bottom: 180px ;
+
+    }
+}

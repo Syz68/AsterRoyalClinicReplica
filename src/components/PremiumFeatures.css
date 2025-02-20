@@ -2,7 +2,7 @@
     /* background-color: #f9f9f9; */
     padding: 40px;
     border-radius: 10px;
-    /* max-width: 1200px; */
+    max-width: 1350px;
     margin: 0 auto;
     text-align: center;
   }
@@ -58,4 +58,11 @@
       grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
     }
   }
+
+.goldenborderroyal {
+  width: 88%;
+  border-bottom: 2px solid #f0b222;
+  margin: 20px auto;
+
+}
   

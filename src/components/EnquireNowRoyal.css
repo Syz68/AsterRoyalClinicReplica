@@ -1,0 +1,55 @@
+   .royal-cta-section {
+       color: #fff;
+       text-align: center;
+       padding: 40px 20px;
+       border-top: 4px solid #f4a742;
+       /* Golden border */
+   }
+
+   .royal-cta-heading {
+       font-size: 2rem;
+       color: #E4AE2B;
+   }
+
+   .royal-cta-subtext {
+       font-size: 1.2rem;
+       color: #fff;
+       margin: 10px 0;
+   }
+
+   .royal-cta-button {
+    background-color: #f4a742; /* Golden button */
+    color: #0a4c91; /* Blue text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .royal-cta-button:hover {
+    background-color: #d59c4c; /* Darker golden on hover */
+    transform: scale(1.05);
+  }
+  
+
+   .pc-view {
+       display: inline-block;
+   }
+
+   .mobile-view {
+       display: none;
+   }
+
+   /* Media query for mobile devices */
+   @media (max-width: 768px) {
+       .pc-view {
+           display: none;
+       }
+
+       .mobile-view {
+           display: inline-block;
+       }
+   }

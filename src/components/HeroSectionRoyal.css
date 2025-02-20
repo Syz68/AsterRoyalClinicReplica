@@ -92,3 +92,13 @@
     top: 48%;
     left: 6%;
 }
+
+
+
+.goldenunderline {
+    position: absolute;
+    border-bottom: 3px solid #E4AE2B;
+    top: 62%;
+    left: 20%;
+    width: 250px;
+}

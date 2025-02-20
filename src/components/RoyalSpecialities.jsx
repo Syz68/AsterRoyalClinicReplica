@@ -13,8 +13,14 @@ const specialities = [
 ];
 
 const RoyalSpecialities = () => (
+
+  <div className='royal-spec-maindiv'>
+     <div className='royal-bg-tr'></div>
+
   <section className="specialities-container">
+
     <h2 className="specialities-title">Our Specialities</h2>
+
     <div className="specialities-grid">
       {specialities.map((item, index) => (
         <div className="speciality-item" key={index}>
@@ -24,6 +30,7 @@ const RoyalSpecialities = () => (
       ))}
     </div>
   </section>
+  </div>
 );
 
 export default RoyalSpecialities;
