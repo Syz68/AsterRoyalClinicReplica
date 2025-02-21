@@ -4,16 +4,9 @@ import './VideoSectionRoyal.css';
 const videos = [
   {
     title: "Clinic Overview",
-    url: "https://www.youtube.com/embed/your-video-id-1",
+    url: "https://www.youtube.com/embed/z3HtrMYZuIE?si=IZncixJmpgDCep1v",
   },
-  {
-    title: "Meet Our Doctors",
-    url: "https://www.youtube.com/embed/your-video-id-2",
-  },
-  {
-    title: "Patient Testimonials",
-    url: "https://www.youtube.com/embed/your-video-id-3",
-  },
+  
 ];
 
 const VideoSectionRoyal = () => {

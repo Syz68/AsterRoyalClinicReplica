@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    max-width: 1200px;
+    max-width: 600px; /* change the max widht if add more video */
     margin: 0 auto;
   }
   
@@ -40,7 +40,7 @@
   /* Video Iframe */
   .royal-video-iframe {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
   }
   

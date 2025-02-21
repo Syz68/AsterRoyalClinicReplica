@@ -9,6 +9,10 @@
     display: none;
 }
 
+.add-mobileview-heading {
+    color: #E4AE2B;
+}
+
 /* Show form only on mobile devices (max width 768px) */
 @media (max-width: 768px) {
     .add-mobileview-only {
@@ -19,7 +23,7 @@
 
 
         background-color: white;
-        width: 100%;
+        width: 95%;
         height: 100%;
 
         display: flex;

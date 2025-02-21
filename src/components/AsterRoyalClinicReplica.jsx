@@ -11,7 +11,6 @@ import RoyalClinicFAQ from './RoyalClinicFAQ'
 import EnquireNowRoyal from './EnquireNowRoyal'
 
 
-
 // golden color - #E4AE2B
 
 const AsterRoyalClinicReplica = () => {
