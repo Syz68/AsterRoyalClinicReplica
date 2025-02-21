@@ -1,0 +1,68 @@
+/* StickyScrollButton.css */
+.sticky-scroll-btn {
+    position: fixed;
+    bottom: 29px;
+    right: 20px;
+    background-color: #f4a742;
+    color: #0f3e75;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  
+    /* ✨ Add the bounce animation */
+    animation: bounce 2s;
+  }
+  
+  /* 🌟 Bounce animation keyframes */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  
+  .sticky-scroll-btn:hover {
+    /* background-color: #d59c4c;  */
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(247, 191, 59, 0.5);
+  }
+  
+  
+  /* Hide mobile button on desktop */
+  .mobile-btn {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .sticky-scroll-btn {
+      right: 16px;
+      bottom: 18px;
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .mobile-btn {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .pc-royal-btn {
+        display: none;
+    }
+  }
+  

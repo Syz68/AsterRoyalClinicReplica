@@ -14,7 +14,7 @@ const features = [
 const ContentSectionRoyal = () => {
     return (
         <div className='royal-choose-maindiv'>
-        <div className='royal-bg-tl'></div>
+        {/* <div className='royal-bg-tl'></div> */}
         
         <div className="why-choose-container">
             

@@ -15,7 +15,7 @@ const specialities = [
 const RoyalSpecialities = () => (
 
   <div className='royal-spec-maindiv'>
-     <div className='royal-bg-tr'></div>
+     {/* <div className='royal-bg-tr'></div> */}
 
   <section className="specialities-container">
 

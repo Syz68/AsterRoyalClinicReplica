@@ -23,10 +23,10 @@ const EnquireNowRoyal = () => {
         Our experts are here to assist you. Reach out and book your appointment today!
       </p>
       <button className="royal-cta-button pc-view" onClick={scrollToForm}>
-        Enquire Now
+      Request A Callback
       </button>
       <button className="royal-cta-button mobile-view" onClick={scrollToMobileForm}>
-        Enquire Now
+      Request A Callback
       </button>
     </section>
   );

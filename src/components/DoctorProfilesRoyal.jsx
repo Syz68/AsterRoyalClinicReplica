@@ -3,65 +3,25 @@ import "./DoctorProfilesRoyal.css";
 import RequestCallbackForm from "./RequestCallbackForm";
 
 const doctors = [
-    {
-        name: "Dr. Mohammadreza Razmavar",
-        degrees: "MBBS, MD",
-        specialty: "Dermatology / Cosmetology",
-        image: "https://www.asterclinic.ae/assets/Asset-8@3x-ivOTnEQe.png",
-    },
-    {
-        name: "Dr. Nishant Khurana",
-        degrees: "BDS, MDS",
-        specialty: "Dentistry",
-        image: "https://www.asterclinic.ae/assets/Asset-9_3x-removebg-preview-BPhg0xM1.png",
-    },
-    {
-        name: "Dr. Swati Prasad",
-        degrees: "MBBS, MD",
-        specialty: "Internal Medicine",
-        image: "https://www.asterclinic.ae/assets/Mask-group-21-D5xTVxbv.png",
-    },
-    {
-        name: "Dr. Jayanti Malik",
-        degrees: "MBBS, MD",
-        specialty: "Dermatology / Cosmetology",
-        image: "https://www.asterclinic.ae/assets/Group-1-3-BNOOUNkl.png",
-    },
-    {
-        name: "Dr. Sudha Rao",
-        degrees: "MBBS, MD, MGCP, FWACP",
-        specialty: "Paediatrics",
-        image: "https://www.asterclinic.ae/assets/Group-1-2-1-BklTF2rC.png",
-    },
-    {
-        name: "Dr. Salman Kareem",
-        degrees: "MBBS, MD",
-        specialty: "Psychiatry",
-        image: "https://www.asterclinic.ae/assets/Group-107-1-DxzFiTJN.png",
-    },
-    {
-        name: "Dr. Shikha Garg",
-        degrees: "MBBS, MD",
-        specialty: "Gynaecology",
-        image: "https://www.asterclinic.ae/assets/Untitled-C0eDa1YE.png",
-    },
-    {
-        name: "Dr. Sana Patel",
-        degrees: "M.D.S, B.D.S, M.A",
-        specialty: "Paediatric Dentistry",
-        image: "https://www.asterclinic.ae/assets/Untitled-design-3-BnKkluiO.png",
-    },
+    { name: "Dr. Mohammadreza Razmavar", degrees: "MBBS, MD", specialty: "Dermatology / Cosmetology", image: "https://www.asterclinic.ae/assets/Asset-8@3x-ivOTnEQe.png" },
+    { name: "Dr. Nishant Khurana", degrees: "BDS, MDS", specialty: "Dentistry", image: "https://www.asterclinic.ae/assets/Asset-9_3x-removebg-preview-BPhg0xM1.png" },
+    { name: "Dr. Swati Prasad", degrees: "MBBS, MD", specialty: "Internal Medicine", image: "https://www.asterclinic.ae/assets/Mask-group-21-D5xTVxbv.png" },
+    { name: "Dr. Jayanti Malik", degrees: "MBBS, MD", specialty: "Dermatology / Cosmetology", image: "https://www.asterclinic.ae/assets/Group-1-3-BNOOUNkl.png" },
+    { name: "Dr. Sudha Rao", degrees: "MBBS, MD, MGCP, FWACP", specialty: "Paediatrics", image: "https://www.asterclinic.ae/assets/Group-1-2-1-BklTF2rC.png" },
+    { name: "Dr. Salman Kareem", degrees: "MBBS, MD", specialty: "Psychiatry", image: "https://www.asterclinic.ae/assets/Group-107-1-DxzFiTJN.png" },
+    { name: "Dr. Shikha Garg", degrees: "MBBS, MD", specialty: "Gynaecology", image: "https://www.asterclinic.ae/assets/Untitled-C0eDa1YE.png" },
+    { name: "Dr. Sana Patel", degrees: "M.D.S, B.D.S, M.A", specialty: "Paediatric Dentistry", image: "https://www.asterclinic.ae/assets/Untitled-design-3-BnKkluiO.png" },
 ];
 
 const DoctorProfilesRoyal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [visibleDoctors, setVisibleDoctors] = useState(4); // Show first 4 doctors initially
 
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
-    const closeModal = () => {
-        setIsModalOpen(false);
+    const toggleDoctors = () => {
+        setVisibleDoctors((prev) => (prev === 4 ? doctors.length : 4));
     };
 
     return (
@@ -70,8 +30,9 @@ const DoctorProfilesRoyal = () => {
             <div className="royal-bg-ttt"></div>
 
             <h2 className="section-title">Our Expert Doctors</h2>
+            
             <div className="doctor-grid">
-                {doctors.map((doctor, index) => (
+                {doctors.slice(0, visibleDoctors).map((doctor, index) => (
                     <div className="doctor-card" key={index}>
                         <div className="doctor-image">
                             <img src={doctor.image} alt={doctor.name} />
@@ -88,12 +49,20 @@ const DoctorProfilesRoyal = () => {
                 ))}
             </div>
 
+            {/* More/Less Button */}
+            <div className="more-btn-container">
+                <button className="more-btn" onClick={toggleDoctors}>
+                    {visibleDoctors === 4 ? "View More" : "Show Less"}
+                </button>
+            </div>
+
+            {/* Modal for Request Callback */}
             {isModalOpen && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                         <button className="close-btn" onClick={closeModal}>&times;</button>
-                        <h3>Request A Callback</h3>
-                        <RequestCallbackForm/>
+                        <h3>Premium Healthcare, Personalized for You</h3>
+                        <RequestCallbackForm />
                     </div>
                 </div>
             )}

@@ -6,6 +6,12 @@ const videos = [
     title: "Clinic Overview",
     url: "https://www.youtube.com/embed/z3HtrMYZuIE?si=IZncixJmpgDCep1v",
   },
+
+  // {
+  //   title: "Clinic Overview",
+  //   url: "https://www.youtube.com/embed/z3HtrMYZuIE?si=IZncixJmpgDCep1v",
+  // },
+
   
 ];
 

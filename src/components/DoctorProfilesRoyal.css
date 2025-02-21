@@ -214,3 +214,27 @@
   }
 
 
+  .more-btn-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .more-btn { 
+    background-color: #E4AE2B;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .more-btn:hover {
+    background-color: #d99e15;
+    box-shadow: 0 9px 11px -5px rgba(228, 174, 43, 0.6);
+
+  }
+  
+
+

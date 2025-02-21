@@ -1,7 +1,7 @@
 .insurance-maindiv-royal{
     width: 100%;
     position: relative;
-    padding-bottom: 220px ;
+    padding-bottom: 50px ;
 }
 
 .contentpart-royal {
@@ -22,19 +22,6 @@
 
 
 
-    .royal-bg-bl {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 650px;
-    height: 320px;
-    z-index: 1;
-    background-image: url('../assets/last-image.png');
-    background-size: cover;
-    background-position: center;
-    }
-
-
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .royal-bg-bl {
@@ -47,7 +34,7 @@
     }
 
     .insurance-maindiv-royal {
-        padding-bottom: 180px ;
+        padding-bottom: 20px ;
 
     }
 }

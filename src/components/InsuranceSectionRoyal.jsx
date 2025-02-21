@@ -5,7 +5,7 @@ const InsuranceSectionRoyal = () => {
   return (
     <div className='insurance-maindiv-royal'>
 
-        <div className='royal-bg-bl'></div>
+        {/* <div className='royal-bg-bl'></div> */}
 
         <div className='contentpart-royal'>
             <h3>Insurance Coverage</h3>
