@@ -1,240 +1,168 @@
 /* Section Styling */
 .doctor-section-royal {
-    background-color: #0a4c91; /* Blue background */
-    padding: 40px 20px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    color: #f4a742; /* Golden-yellow */
-    margin-bottom: 30px;
-  }
-  
-  /* Grid Layout */
+  background-color: #0a4c91;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #f4a742;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
   .doctor-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 40px;
-    align-items: start; 
-    justify-content: center; 
-    max-width: 1200px;
-    margin: 0 auto;
+      grid-template-columns: 1fr;
   }
   
-  /* Doctor Card */
-  .doctor-card {
-    display: flex;
-    /* align-items: center; */
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 500px;
-    height: 100%;
-  }
-  
-  .doctor-image img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    /* border: 4px solid #f4a742; */
-    object-fit: cover;
-  }
-  
-  /* Doctor Info */
-  .doctor-info {
-    text-align: left;
-  }
-  
-  .doctor-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #f4a742;
-  }
-  
-  .doctor-degrees,
-  .doctor-specialty {
-    font-size: 0.95rem;
-    color: #fff;
-    margin: 4px 0;
-  }
-  
-  /* Appointment Button */
-  .appointment-btn {
-    background-color: #d59c4c;
-    color: #fff;
-    border: none;
-    padding: 10px 12px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .appointment-btn:hover {
-    background-color: #c08638;
-  }
-  
+}
 
-  @media (max-width: 768px) {
-    .doctor-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+/* Doctor Card */
+.doctor-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 500px;
+}
 
-    .doctor-image img {
-      width: 100px;
-      height: 100px;
-    }
-  }
+.doctor-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
- 
-    .royal-bg-tt {
-    position: absolute;
-    top: 54%;
-    left: -4%;
-    width: 300px;
-    height: 450px;
-    z-index: 1;
-    background-image: url('../assets/top-left-image.png');
-    background-size: cover;
-    background-position: center;
-    transform: scaleX(-1);
-    }
+/* Doctor Info */
+.doctor-info {
+  text-align: left;
+}
 
-    .royal-bg-ttt {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    width: 250px;
-    height: 450px;
-    z-index: 1;
-    background-image: url('../assets/top-left-image.png');
-    background-size: cover;
-    background-position: center;
-    /* transform: scaleX(-1); */
-    }
+.doctor-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f4a742;
+}
 
+.doctor-degrees,
+.doctor-specialty {
+  font-size: 0.95rem;
+  color: #fff;
+  margin: 4px 0;
+}
 
-    /* modal css */
+/* Appointment Button - Preserved Original Styles */
+.appointment-btn {
+  background-color: #d59c4c;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+  background-color: #c08638;
+}
+
+/* More Button */
+.more-btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.more-btn {
+  background-color: #E4AE2B;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #d99e15;
+  box-shadow: 0 9px 11px -5px rgba(228, 174, 43, 0.6);
+}
+
+/* Background Images - Prevent Click Blocking */
+.royal-bg-tt, .royal-bg-ttt {
+  pointer-events: none;
+}
+
+/* Modal Styling */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    /* background-color: #0f5eb8; */
-    background-color: #fff;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 12px;
-    padding: 20px;
-    position: relative;
-    z-index: 1001;
-    animation: slideUp 0.3s ease-in-out;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Close Button */
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    font-size: 1.625rem;
-    font-weight: bold;
-    color: #000;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-  
-  .close-btn:hover {
-    color: #f44336; /* Red on hover */
-  }
-  
-  /* Modal Heading */
-  .modal-content h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #F4A742; /* Match the theme color */
-    text-align: center;
-  }
-  
-  /* Iframe Styling */
-  .modal-content iframe {
-    width: 100%;
-    height: 350px;
-    border-radius: 8px;
-    border: 2px solid #f4a742; /* Golden border for consistency */
-    padding: 20px;
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideUp {
-    from {
-      transform: translateY(40px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .modal-content {
-      width: 89%;
-      padding: 15px;
-    }
-  
-    .modal-content iframe {
-      height: 350px;
-    }
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  z-index: 10001;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.625rem;
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f44336;
+}
+
+.modal-content h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #F4A742;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 
-  .more-btn-container {
-    text-align: center;
-    margin-top: 50px;
+@media (max-width: 768px){
+  .royal-doctor-img {
+    width: 120px !important;
+    height: 120px !important;
   }
-  
-  .more-btn { 
-    background-color: #E4AE2B;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .more-btn:hover {
-    background-color: #d99e15;
-    box-shadow: 0 9px 11px -5px rgba(228, 174, 43, 0.6);
-
-  }
-  
-
-
+}
