@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./DoctorProfilesRoyal.css";
+import RequestCallbackForm from "./RequestCallbackForm";
 
 const doctors = [
     {
@@ -92,15 +93,7 @@ const DoctorProfilesRoyal = () => {
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                         <button className="close-btn" onClick={closeModal}>&times;</button>
                         <h3>Request A Callback</h3>
-                        <iframe
-                            src="https://asterclinicmern.stldigitaltech.com/form/67b57a1147d6744903041617?redirect_to=https://asterclinicmern.stldigitaltech.com/"
-                            title="Appointment Form"
-                            width="100%"
-                            height="500px"
-                            frameBorder="0"
-                            scrolling="no"
-                            allowFullScreen
-                        ></iframe>
+                        <RequestCallbackForm/>
                     </div>
                 </div>
             )}
